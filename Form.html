@@ -59,7 +59,7 @@
                         </div>
                         <div class="right">
                             <label for="student num">PUP Student No.</label>
-                            <input type="text" minlength="12" maxlength="12" id="studentnum" name="studentnum" placeholder="20XX XXXXX XX X" required/>
+                            <input type="text" pattern="\d{4}-\d{5}-[A-Z]{2}-\d" minlength="15" maxlength="15" id="studentnum" name="studentnum" placeholder="20XX-XXXXX-XX-X" required/>
                         </div>
                     </div>
                     <br>
@@ -70,7 +70,7 @@
                         </div>
                         <div class="right">
                             <label for="school year">School Year</label>
-                            <input type="text" minlength="8" maxlength="8" id="school year" name="school year" placeholder="20XX-20XX" required/>
+                            <input type="text" pattern="\d{4}-\d{4}" minlength="9" maxlength="9" id="school year" name="school year" placeholder="20XX-20XX" required/>
                         </div>
                     </div>
                     <br>
@@ -121,11 +121,11 @@
                     <div class="left-right">
                         <div class="left">
                             <label for="landline">Landline</label>
-                            <input type="text" minlength="8" maxlength="8" id="landline" name="landline" placeholder="00000000" required/>
+                            <input type="text" pattern="02\d{7}" minlength="9" maxlength="9" id="landline" name="landline" placeholder="00000000" required/>
                         </div>
                         <div class="right">
                             <label for="cellphone">Cellphone</label>
-                            <input type="text" minlength="11" maxlength="11" id="cellphone" name="cellphone" placeholder="0900000000" required/>
+                            <input type="text" pattern="09\d{9}" minlength="11" maxlength="11" id="cellphone" name="cellphone" placeholder="0900000000" required/>
                         </div>
                     </div>
                     <br>

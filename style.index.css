@@ -201,6 +201,9 @@ input {
 input[type="text"] {
   color: rgb(5, 5, 5);
 }
+input[type="num"] {
+  color: rgb(5, 5, 5);
+}
 
 textarea:focus, input:focus{
   outline: none;
