@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://www.pup.edu.ph/about/images/PUPLogo.png" rel="icon" />
+    <link rel="stylesheet" href="style.index.css" />
+    <script src="script.js"></script>
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div class="Header">
+      <div class="Header__Logo">
+        <img src="pup-logo.png" />
+        <div class="Header__Logo__Text">
+          Polytechnic University of the Philippines
+        </div>
+      </div>
+      <div class="Header__Navlinks">
+        <a href="index.html" class="Header__Navlinks__Links">Home</a>
+        <a href="https://www.pup.edu.ph/downloads/students/" class="Header__Navlinks__Links">About PUP</a>
+        <a href="https://www.pup.edu.ph/academic/" class="Header__Navlinks__Links">Academic</a>
+        <a href="https://www.pup.edu.ph/students/" class="Header__Navlinks__Links">Students</a>
+        <a href="https://www.pup.edu.ph/researcher/" class="Header__Navlinks__Links">Research</a>
+      </div>
+    </div>
+
+    <div>
+            <form method="post" action="https://script.google.com/macros/s/AKfycbymVyYhEWlIhPBTe1xP-dqMcQBxTL8T8SozA5HiXmxEiya8e2go-4xgCdzXgKqyUnF8/exec" onsubmit="showPopup()">
+                <div class="container">
+    
+                    <div class="heading">
+                      <h1>PUP Health Declaration Form</h1>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    </div>
+                    <h2> PART I. Student Information</h2>
+        
+                    <br>
+                    <p>Due to Covid-19 pandemic, physical examination, and chest x-ray submission as requirement for enrollment is
+                        temporary deferred, however, you will be asked to comply with this upon resumption of your face-to-face classes.
+                    </p>
+        
+                    <br>
+                    <br>
+                    <p>Please upload photo</p>
+                    <br>
+            
+                    <input type="file" id="upload" name="upload" accept=".png,.jpg,.jpeg.">
+                    <label for="upload" class="upload-label">Upload Photo</label>
+                    <br>
+                    <br> 
+                    <div class="left-right">
+                        <div class="left">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required/>
+                        </div>
+                        <div class="right">
+                            <label for="student num">PUP Student No.</label>
+                            <input type="text" minlength="12" maxlength="12" id="studentnum" name="studentnum" placeholder="20XX XXXXX XX X" required/>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="left-right">
+                        <div class="left">
+                            <label for="address">Home Address</label>
+                    <input type="text" id="address" name="address" placeholder="House no. Street Name, barangay, City," required/>
+                        </div>
+                        <div class="right">
+                            <label for="school year">School Year</label>
+                            <input type="text" minlength="8" maxlength="8" id="school year" name="school year" placeholder="20XX-20XX" required/>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                
+                    <div class="four-items">
+                        <div class="one-four">
+                            <label for="age">Age</label>
+                            <input type="num"  id="age" name="age" placeholder="00" required/>
+                        </div>
+                        <div class="one-four">
+                            <p><b>Gender</b></p> 
+                            <div class="radio">
+                            <input type="radio" id="Gender" name="Gender" value="male">
+                                <label for="Gender">Male</label> 
+        
+                                <input type="radio" id="Gender" name="Gender" value="Female">
+                                <label for="Gender">Female</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <label for="civil status">Civil Status</label>
+                            <input type="text"  id="civil status" name="civil status" placeholder="single" required/>
+                        </div>
+                        <div class="one-four">
+                            <label for="course college">Course/College</label>
+                            <input type="text"  id="ccourse college" name="course college" placeholder="CCIS" required/>
+                        </div>
+                        <div class="one-four">
+                            <label for="blood type">Blood Type</label>
+                            <input type="text"  id="blood type" name="blood type" placeholder="O" required/>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="left-right">
+                        <div class="left">
+                            <label for="email address">Email Address</label>
+                            <input type="email"  id="email address" name="email address" placeholder="juandc@gmail.com" required/>
+                        </div>
+                        <div class="right">
+                            <label for="guardian">Parent's Name / Guardian / Spouse</label>
+                            <input type="text"  id="guardian" name="guardian" placeholder="juana de los santos" required/>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="left-right">
+                        <div class="left">
+                            <label for="landline">Landline</label>
+                            <input type="text" minlength="8" maxlength="8" id="landline" name="landline" placeholder="00000000" required/>
+                        </div>
+                        <div class="right">
+                            <label for="cellphone">Cellphone</label>
+                            <input type="text" minlength="11" maxlength="11" id="cellphone" name="cellphone" placeholder="0900000000" required/>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <div class="heading">
+                        <h2> PART II. MEDICAL HISTORY</h2>
+                    </div>
+                    <br>
+                    <div class="YesNoQ">
+                        <div class="Question">
+                            <p><b>1.  Do you need medical attention or has known medical illness? </b></p>
+                        </div>
+                        <div class="YesNo">
+                            <div class="radio">
+        
+                                <input type="radio" id="has medical illness" name="has medical illness" value="Has no medical illness">
+                                <label for="has medical illness">No</label> 
+                
+                                <input type="radio" id="has medical illness" name="has medical illness" value="have medical illness">
+                                <label for="has medical illness">Yes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Please check the following that apply and give more information as needed</p>
+                    <br>
+                    <div class="four-items">    
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="asthma" name="asthma" value="asthma">
+                                <label for="asthma"> Asthma</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Loss of Consciousness" name="Loss of Consciousness" value="Loss of Consciousness">
+                                <label for="Loss of Consciousness"> Loss of Consciousness</label>
+                                
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Eye Disease/Defect" name="Eye Disease/Defect" value="Eye Disease/Defect">
+                                <label for="Eye Disease/Defect"> Eye Disease/Defect</label>
+                                
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Accident Injuries" name="Accident Injuries" value="Accident Injuries">
+                                <label for="Accident Injuries"> Accident Injuries</label>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <br>
+                    <br>
+                    <div class="four-items">
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="diabetes" name="diabetes" value="diabetes">
+                                <label for="diabetes"> diabetes</label>
+                                
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Heart Disease" name="Heart Disease" value="Heart Disease">
+                                <label for="Heart Disease"> Heart Disease</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Kidney Disease" name="Kidney Disease" value="Kidney Disease">
+                                <label for="Kidney Disease"> Kidney Disease</label>
+                                
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                
+                                <input type="checkbox" id="Tubercolosis/Primary Complex" name="Tubercolosis/Primary Complex" value="Tubercolosis/Primary Comple">
+                                <label for="Tubercolosis/Primary Comple"> Tubercolosis/Primary Comple</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+        
+                    <div class="four-items">
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Convulsion/Epilepsy" name="Convulsion/Epilepsy" value="Convulsion/Epilepsy">
+                                <label for="Convulsion/Epilepsy"> Convulsion/Epilepsy</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Hyperventilation" name="Hyperventilation" value="Hyperventilation">
+                                <label for="Hyperventilation"> Hyperventilation</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Hemophilia" name="Hemophilia" value="Hemophilia">
+                                <label for="Hemophilia"> Hemophilia</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Migraine" name="Migraine" value="Migraine">
+                                <label for="Migraine"> Migraine</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="four-items">
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                
+                                <input type="checkbox" id="High Blood Pressure" name="High Blood Pressure" value="High Blood Pressure">
+                                <label for="High Blood Pressure"> High Blood Pressure</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <label for="others">Others</label>
+                            <input type="text" id="others" name="others" placeholder="Please Indicate">
+                        </div>
+                    </div>
+        
+                    <br>
+                    <br>
+                    <br>
+        
+                    <p><b>2. Additional Information for Students with Medical Conditions</b></p>
+                    <br>
+                    <p>As a Parent/Guardian, I would like to declare that my child had history of allergies to the following:</p>
+        
+                    <br>
+                    <div class="left-right">
+                        <div class="left">
+                            <label for="food">Food:</label>
+                            <input type="text" id="food" name="food">
+                        </div>
+                        <div class="right">
+                            <label for="allergies">No Known Allergies:</label>
+                            <input type="text" id="allergies" name="allergies">
+                        </div>
+                    </div>
+        
+                    <br>
+                    <br>
+                    
+                    <div class="four-items">
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <p><b>Medicines:</b></p>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Aspirin" name="Aspirin" value="Aspirin">
+                                <label for="Aspirin"> Aspirin</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Mefenamic Acid" name="Mefenamic Acid" value="Mefenamic Acid">
+                                <label for="Mefenamic Acid"> Mefenamic Acid</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Ibuprofen" name="Ibuprofen" value="Ibuprofen">
+                                <label for="Ibuprofen"> Ibuprofen</label>
+                            </div>
+                        </div>         
+                    </div>
+                    <div class="four-items">
+                
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Penicillin" name="Penicillin" value="Penicillin">
+                                <label for="Penicillin"> Penicillin</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <div class="multiplechoice">
+                                <input type="checkbox" id="Amoxicillin" name="Amoxicillin" value="Amoxicillin">
+                                <label for="Amoxicillin"> Amoxicillin</label>
+                            </div>
+                        </div><div class="one-four">
+                            <div class="multiplechoice">
+                                <label for="others">Others:</label>
+                            </div>
+                        </div>
+                        <div class="one-four">
+                            <input type="text" id="others" name="othermedicince" placeholder="please specify">
+                        </div>
+                    </div>  
+                </div>
+        
+                <div class="container">
+                    <div class="heading">
+                        <h2> PART III. Personal History</h2>
+                    </div>
+                    <br>
+                    <div class="YesNoQ">
+                        <div class="Question">
+                            <p><b>Cigarette Smoking:</b></p>
+                        </div>
+                        <div class="YesNo">
+                            <div class="radio">
+                                <input type="radio" id="smoking" name="smoking" value="No">
+                                <label for="smoking">No</label> 
+                
+                                <input type="radio" id="smoking" name="smoking" value="Yes">
+                                <label for="smoking">Yes</label> 
+                        </div>
+        
+                        </div>
+                    </div>
+        
+                    <div class="YesNoQ">
+                        <div class="Question">
+                            <p><b>Alcohol Drinking:</b></p>
+                        </div>
+                        <div class="YesNo">
+                            <div class="radio">
+                                <input type="radio" id="drinking" name="drinking" value="No">
+                                <label for="drinking">No</label> 
+                
+                                <input type="radio" id="drinking" name="drinking" value="Yes">
+                                <label for="drinking">Yes</label> 
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+        
+                    <p><em><strong>I hereby state to the best of my knowledge, my answers to the above questions are complete and correct.</strong></em></p>
+                    <br>
+                    <br>
+                    <p><em><strong>By affixing my signature (Parent/Guardian and Student), I agree to the Data Privacy Act of 2012 and its implementing
+                        rules and regulations and voluntarily giving my consent in the collection and processing of the student's name above
+                        its Personal Information in accordance with such as health assessment, treatment and/or research following research
+                        ethics guidelines for the improvements of healthcare services. This consent will remain in full force until I revoke it in
+                        writing. I also understand the PUP MSD will not be liable to any untoward incident this may arise due to the
+                        temporary deferral of the physical examination and chest x-ray.</strong></em></p>  
+                        <br>
+                        <br>
+                    <div class="four-items">
+                        <div class="one-four">
+                            <label for="signature"></label>
+                            <input type="text" id="signature" name="signature" placeholder=" Signature of guardian">
+                        </div>
+        
+                        <div class="one-four">
+                            <label for="student signature"></label>
+                            <input type="text" id="student signature" name="student signature" placeholder=" Signature of Student">
+                        </div>
+        
+                        <div class="one-four">
+                            <label for="date"></label>
+                            <input style="color:#5f5f5f" type="date" id="date" name="date" placeholder="date">
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <p style="text-align: center"><strong><em>Note: Both Parent/Guardian and Student will sign if <u>Student is below 18 years of age.</u></em></strong></p>
+                    <br>
+                    <div class="buttons">
+                      <div class="rightbutton">
+                        <input style="color: #000000;" type="submit" value="submit">
+                      </div>
+                    </div>
+                </div>  
+                  
+              </form> 
+            </div>
+            <div class="Footer">
+              <div class="Footer__Logo">
+                <img class="Footer__Logo__Image" src="pup-logo.png" />
+                <div class="Footer__Logo__Text">
+                  <p>Republic of the Philippines</p>
+                  <p>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
+                  <p>Office of the Vice President for Administration</p>
+                  <p>MEDICAL SERVICES DEPARTMENT</p>
+                </div>
+              </div>
+        
+              <div class="Footer__Links">
+                <div class="Footer__Links__Link">
+                  <p style="color:#FFA27F;">ONLINE SERVICES</p>
+                  <a href="https://outlook.office.com/mail/">PUP WebMail</a>
+                  <a href="https://www.pup.edu.ph/iapply/">PUP iApply </a>
+                  <a href="https://sis8.pup.edu.ph">SIS for Students</a>
+                  <a href="https://sis1.pup.edu.ph">SIS for Faculty</a>
+                </div>
+                <div class="Footer__Links__Link">
+                  <p style="color:#FFA27F;">DOWNLOADS</p>
+                  <a href="https://www.pup.edu.ph/downloads/students/">For Students</a>
+                  <a href="https://www.pup.edu.ph/downloads/employees/">For Faculty and employees</a>
+                </div>
+                <div class="Footer__Links__Link">
+                  <p style="color:#FFA27F;">QUICK LINKS</p>
+                  <a href="https://www.pup.edu.ph/about/branchescampuses">Campuses</a>
+                  <a href="https://www.pup.edu.ph/academic/undergrad">Academic Programs</a>
+                  <a href="https://www.pup.edu.ph/goodgovernance/transparency/2023/">Transparency Seal</a>
+                  <a href="https://www.pup.edu.ph/jobpost/">Jobs for PUPians</a>
+                </div>
+              </div>
+            </div>
+          </body>
+        </html>
+        
